@@ -1,9 +1,10 @@
 # DataWolf 4.1.0 Dockerfile
+Dockerfile to run DataWolf Server and Editor webapps
 
-# Prerequisites
-* Docker
+## Prerequisites
+* [Docker](https://www.docker.com/what-docker)
 
-# Setup
+## Setup
 You will need to download the newest [DataWolf release](https://opensource.ncsa.illinois.edu/projects/artifacts.php?key=WOLF) binary zipfile.
 
 Once downloaded, you should extract the contents of the zipfile so that your directory looks as follows:
@@ -17,7 +18,7 @@ Once downloaded, you should extract the contents of the zipfile so that your dir
 * lib/
 * README.md
 
-# Build
+## Build
 Now you are ready to build your Docker image.
 
 From the project root, execute:
@@ -25,7 +26,7 @@ From the project root, execute:
 docker build -t datawolf:4.1.0 .
 ```
 
-# Run
+## Run
 You can now run DataWolf 4.1.0 in a container using the following command:
 ```bash
 docker run --name=datawolf -d -it -e INITIAL_ADMINS="YOUR_EMAIL_HERE" -p 8888:8888 datawolf:4.1.0
