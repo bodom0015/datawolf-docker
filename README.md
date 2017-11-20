@@ -39,3 +39,4 @@ NOTE: Don't forget to specify an environment variable indicating the e-mail addr
 * Grab binary automatically (don't make user do this manually)
 * Transfer repo to nds-org
 * Automate this build on DockerHub
+* Support more DataWolf configuration options (SMTP, for example)
