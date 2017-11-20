@@ -33,3 +33,9 @@ docker run --name=datawolf -d -it -e INITIAL_ADMINS="YOUR_EMAIL_HERE" -p 8888:88
 ```
 
 NOTE: Don't forget to specify an environment variable indicating the e-mail addresses of your `initialAdmins`.
+
+
+# TODO
+* Grab binary automatically (don't make user do this manually)
+* Transfer repo to nds-org
+* Automate this build on DockerHub
